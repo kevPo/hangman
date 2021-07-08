@@ -87,5 +87,6 @@ defmodule GameTest do
     assert game.turns_left == 1
     {game, _} = Game.make_move(game, "g")
     assert game.game_state == :lost
+    assert game.turns_left == 0
   end
 end
